@@ -10,9 +10,9 @@ $(document).ready(function(){
 			},
 			
 			function(data){
+				alert(data);
 				
-				
-				if(data='ok'){
+				if(data==1){
 					
 					location='index.php?page=responder_scheduler';
 				}
