@@ -10,16 +10,16 @@ $(document).ready(function(){
 			},
 			
 			function(data){
-				alert(typeof data+' '+data.valueOf());
-				if(data=='ok'){
+				
+				
+				if(data='ok'){
 					
-					alert('ok');
-					
+					location='index.php?page=responder_scheduler';
 				}
 				else{
 					
-					alert('nook');					
-				}				
+					alert('login/pass incorrect!');
+				}
 			},
 			"text"
 		);

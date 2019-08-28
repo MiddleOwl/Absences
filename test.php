@@ -22,7 +22,7 @@
 	$login='vianney.bancillon';
 	$content="In vacation";
 	$date='2019-07-31';
-	activateResponder($api,$domain,$login,$content,$date);
+	//activateResponder($api,$domain,$login,$content,$date);
 	
 	
 	

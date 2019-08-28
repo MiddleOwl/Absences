@@ -1,9 +1,7 @@
 <?php
 
-
-
-
-include(dirname(__FILE__)."/../views/accueil.php");
+	session_start();
+	include(dirname(__FILE__)."/../views/accueil.php");
 
 ?>
 			

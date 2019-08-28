@@ -3,7 +3,7 @@
 	function check_woodien($login,$password){
 		
 		include(dirname(__FILE__)."/../hidden/connexion.php");
-		$query = $bdd->query('select mailboxGandi FROM woodiens WHERE login="'.$login.'" AND password="'.$password.'"');
+		$query = $bdd->query('select mailboxGandi,prenom,nom FROM woodiens WHERE login="'.$login.'" AND password="'.$password.'"');
 		$mailbox = $query->fetch();
 		$query->closeCursor();
 		return($mailbox);		
