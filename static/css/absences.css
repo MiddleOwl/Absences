@@ -1,0 +1,102 @@
+html,body{
+	
+	height:100%;
+	margin:auto
+}
+
+body{
+	
+	background-image:linear-gradient(to top right,rgba(102,134,23) 35%,rgba(184,204,0) 65%);
+	display:flex;
+	flex-direction:column;
+	text-align:center;
+	font-family:Trebuchet MS	
+	
+}
+
+header{
+	
+	display:flex;
+	margin-top:5px;
+	height:26%;
+}
+
+#logo{
+	border-radius:100px;
+}
+
+#exergue{	
+	
+	font-size:1.5em;
+	margin-bottom:50px;
+}
+
+#bloc_connexion{
+	
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	border:2px solid white;
+	border-radius:8px;
+	margin-top:150px;
+	margin-left:600px;
+	margin-right:600px;
+	background-color:rgba(195,195,195,0.7);	
+	align-items:center;	
+	
+}
+
+#prenom_user{
+	color:white;
+}
+
+#formulaire_scheduler{
+	
+	border:2px solid white;
+	border-radius:8px;
+	background-color:rgba(195,195,195,0.5);	
+	padding-left:10px;
+	margin-left:250px;
+	margin-right:250px;
+	display:flex;
+	flex-direction:column;
+	align-items:flex-start;	
+}
+#bloc_message{
+	
+	display:flex;		
+}
+#activate{
+	align-self:center;
+}
+
+#mailbox{
+	
+	margin-left:100px;	
+}
+#content{
+	margin-left:10px;	
+}
+#start_date{
+	margin-left:70px;
+	width:130px;
+}
+#end_date{
+	margin-left:90px;
+	width:130px;
+	
+	
+}
+
+#activate_responder{
+	
+	align-self:center;
+}
+
+#identifiant,#pwd{
+	
+	display:flex;
+	flex-direction:column;
+	align-items:flex-start;
+	
+}
