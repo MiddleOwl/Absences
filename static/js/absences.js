@@ -33,7 +33,7 @@ $(document).ready(function(){
 		var friendlyEndDate = endDate.split('-')[2]+'/'+endDate.split('-')[1]+'/'+endDate.split('-')[0];
 		var mailbox=$('#mailbox').val();
 		var content = $('#content').val();
-		//alert (mailbox);
+		//alert (content);
 		
 		if(startDate>endDate){
 			alert('Tu devrais choisir une date de fin postérieure à date de début!');
@@ -45,12 +45,13 @@ $(document).ready(function(){
 			alert('Tu es invité à saisir un message d\'absence!');
 		}
 		else{
-			if(confirm('Tu t\'apprêtes à activer ton répondeur pour la période du '+friendlyStartDate+' au '+friendlyEndDate+'. Souhaites tu poursuivre?')){		
+			if(confirm('Tu t\'apprêtes à activer ton répondeur pour la période du '+friendlyStartDate+' au '+friendlyEndDate+'. Souhaites tu poursuivre?')){
+					
 				$.post(
 					'index.php?page=activate_responder',
 					{
 						login:mailbox,
-						content:content,
+						content:$('#content').val(),
 						startdate:startDate,
 						enddate:endDate
 					},

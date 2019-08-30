@@ -10,7 +10,7 @@
 		
 		<div id="bloc_message">
 			<p id="ton_message"><label for = "message">Ton message d'absence: </label>
-				<p><textarea id="content" rows="5" cols="70"></textarea></p>
+				<p><textarea id="content" rows="5" cols="70"></textarea><p>
 			</p>
 		</div>
 		
