@@ -26,7 +26,6 @@ $(document).ready(function(){
 	});
 	
 	
-	
 	$('#activateResponder').click(function(){
 		var startDate = $('#start_date').val();
 		var endDate = $('#end_date').val();
@@ -38,6 +37,9 @@ $(document).ready(function(){
 		
 		if(startDate>endDate){
 			alert('Tu devrais choisir une date de fin postérieure à date de début!');
+		}
+		else if(startDate=="" && endDate==""){
+			alert('Les dates de début et de fin ne devraient pas être vides');
 		}
 		else if(content="" || content.length<5){
 			alert('Tu es invité à saisir un message d\'absence!');
@@ -55,6 +57,7 @@ $(document).ready(function(){
 					
 					function(data){
 						alert(data);
+						location='http://ulteria.fr'
 					},
 					"text"
 				)
